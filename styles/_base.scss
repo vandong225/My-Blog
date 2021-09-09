@@ -1,0 +1,38 @@
+html {
+  font-family: $primary-font;
+  font-size: 62.5%;
+  color: $text-main-color;
+  line-height: 1;
+  background-color: $background-color;
+}
+
+.Wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  font-size: 1.6rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: $primary-color;
+}
+
+.bottom-bar {
+  &:after {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: $text-main-color;
+    position: absolute;
+    bottom: -0.7rem;
+    left: 0;
+    transition: 0.3s;
+  }
+  &:hover {
+    &:after {
+      width: 1.6rem;
+    }
+  }
+}

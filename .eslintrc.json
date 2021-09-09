@@ -1,3 +1,67 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "linebreak-style": ["error", "unix"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "prefer-template": 1,
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "tabWidth": 2
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "minProperties": 5
+      }
+    ],
+    "arrow-body-style": "off",
+    "no-param-reassign": "off",
+    "max-params": [
+      "warn",
+      {
+        "max": 4
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["@src/",
+          "./src/"
+        ],
+        ["@layout/",
+          "./src/layout/"
+        ],
+        ["@components/",
+          "./src/components/"
+        ]
+      ]
+    }
+  }
 }
