@@ -2,8 +2,10 @@
   "root": true,
   "extends": [
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "plugin:import/typescript"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -20,7 +22,9 @@
     "import/prefer-default-export": "off",
     "linebreak-style": ["error", "unix"],
     "@typescript-eslint/explicit-function-return-type": "off",
+    "import/no-unresolved": "off",
     "prefer-template": 1,
+    "import/extensions": "off",
     "max-len": [
       "error",
       {
@@ -42,7 +46,8 @@
       {
         "max": 4
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }]
   },
   "env": {
     "browser": true,
@@ -52,9 +57,6 @@
   "settings": {
     "import/resolver": {
       "alias": [
-        ["@src/",
-          "./src/"
-        ],
         ["@layout/",
           "./src/layout/"
         ],

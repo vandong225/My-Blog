@@ -8,28 +8,27 @@ type TProps = {
 }
 
 const Header:React.FC<TProps> = () => {
-
   const navList: TNavItem[] = [{
     label: 'Home',
-    link: '#'
+    link: '#',
   },
   {
     label: 'Features',
-    link: '#'
+    link: '#',
   },
   {
     label: 'Element',
-    link: '#'
-  }]
+    link: '#',
+  }];
   return (
     <div className="header">
       <div className="logo">
         VAN DONG
       </div>
       <Nav navItems={navList} />
-      <Icons/>
+      <Icons />
     </div>
-  )
-}
+  );
+};
 
 export default Header;

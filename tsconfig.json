@@ -27,9 +27,6 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": [
-        "./src/*"
-      ],
       "@layout/*": [
         "./src/layout/*"
       ],

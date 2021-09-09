@@ -1,12 +1,12 @@
-import Banner from "@src/components/Banner";
-import React from "react";
+import React from 'react';
+import Banner from '@components/Banner';
 
-const Home:React.FC = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Banner />
     </>
-  )
-}
+  );
+};
 
 export default Home;

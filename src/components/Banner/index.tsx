@@ -1,15 +1,14 @@
 import React from 'react';
+import Avatar from './Avatar';
 import Hero from './Hero';
-type TProps = {
 
-}
-
-const index:React.FC<TProps> = () => {
+const index: React.FC = () => {
   return (
     <section className="banner">
-      <Hero/>
+      <Hero />
+      <Avatar />
     </section>
-  )
-}
+  );
+};
 
 export default index;
